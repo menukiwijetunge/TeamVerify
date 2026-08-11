@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 interface HeaderProps {
   backTo?: string;
   backLabel?: string;
-  title?: string;
 }
 
-export default function Header({ backTo, backLabel, title }: HeaderProps) {
+export default function Header({ backTo, backLabel }: HeaderProps) {
   return (
     <div className="page-header">
       <div>
@@ -18,7 +17,6 @@ export default function Header({ backTo, backLabel, title }: HeaderProps) {
             &larr; {backLabel ?? "Back"}
           </Link>
         )}
-        {title && <h1 className="page-title">{title}</h1>}
       </div>
     </div>
   );

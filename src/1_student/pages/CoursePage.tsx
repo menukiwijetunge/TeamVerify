@@ -9,9 +9,10 @@ export default function CoursePage() {
 
   if (!course) return <div style={{ padding: 24 }}>Course not found.</div>;
 
-  return (
-    <div className="page-shell">
-      <Header backTo="/" backLabel="Back to courses" />
+return (
+  <div className="page-shell">
+    <Header backTo="/" backLabel="Back to courses" />
+    <div className="content-container">
       <div className="eyebrow">{course.name}</div>
       <div className="tile-grid">
         {assignments.map((a) => (
@@ -24,5 +25,6 @@ export default function CoursePage() {
         ))}
       </div>
     </div>
-  );
+  </div>
+);
 }

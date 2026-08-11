@@ -1,11 +1,17 @@
 import type { User, Course, Assignment, TaskItem } from "../types";
 
 export const USERS: User[] = [
-  { id: "u1", name: "Amara Singh", initials: "AS" },
-  { id: "u2", name: "Ben Okafor", initials: "BO" },
-  { id: "u3", name: "Chloe Nguyen", initials: "CN" },
-  { id: "u4", name: "Diego Reyes", initials: "DR" },
+  { id: "u1", name: "Amara Singh", initials: "AS", studentNumber: "s3891422" },
+  { id: "u2", name: "Ben Okafor", initials: "BO", studentNumber: "s3872015" },
+  { id: "u3", name: "Chloe Nguyen", initials: "CN", studentNumber: "s3905671" },
+  { id: "u4", name: "Diego Reyes", initials: "DR", studentNumber: "s3866204" },
 ];
+
+export const ASSIGNMENT_TEAMS: Record<string, string[]> = {
+  a1: ["u1", "u2", "u3", "u4"],
+  a2: ["u1", "u2", "u3", "u4"],
+  a3: ["u1", "u3", "u4"],
+};
 
 export const COURSES: Course[] = [
   { id: "c1", code: "COSC2801", name: "Programming" },

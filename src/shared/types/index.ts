@@ -53,3 +53,10 @@ export interface Review {
   comment: string;
   submittedAt: string;
 }
+
+export interface User {
+  id: string;
+  name: string;
+  initials: string;
+  studentNumber: string;
+}
